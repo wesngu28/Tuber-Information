@@ -1,0 +1,111 @@
+/*
+  Name: Wesley Nguyen
+  Date: 2/9/2022
+  Section: CSE 154 AC
+  This is the styles.css page for the included html pages in this repo,
+  index.html.
+*/
+
+#table, #tubeinformation > section, #vtubeinformation > section {
+  display: flex;
+}
+
+#vtubeinformation > section, #table {
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h1, #info > h2, footer > p {
+  border: 1px solid black;
+  color: blue;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+hr {
+  width: 100%;
+  border: none;
+}
+
+header, footer, #info, #table {
+  background-color: aqua;
+  box-shadow: 5px 5px 5px;
+}
+
+h1, h2, p, figcaption, #scientificname {
+  text-align: center;
+}
+
+figure > img, button, #tubeinformation, #vtubeinformation {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+#table {
+  flex-flow: wrap;
+  margin-top: 20px;
+}
+
+#table > p, figcaption {
+  font-size: 18px;
+}
+
+#table > img {
+  margin-bottom: 30px;
+}
+
+#img2 {
+  margin-right: 30px;
+}
+
+#tubeinformation, #vtubeinformation {
+  background-color: #E0DBD7;
+  margin-bottom: 20px;
+  padding: 30px;
+  border-style: solid;
+  border-top-color: aqua;
+  border-top-width: 15px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-bottom-color: aqua;
+  border-bottom-width: 15px;
+}
+
+#tubeinformation > *, #vtubeinformation > *, #creative p, #facts ol > * {
+  font-size: 20px;
+}
+
+#name, #name2 {
+  font-size: 30px;
+}
+
+#tubeinformation #img, #vtubeinformation #img {
+  height: 100%;
+  border-radius: 10%;
+  margin-right: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+#scientificname {
+  margin-bottom: 15px;
+}

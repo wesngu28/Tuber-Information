@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  ***
+  Name: Wesley Nguyen
+  Date: 2/9/2022
+  Section: CSE154 AC Itani
+
+  This is the html page for this project. It displays two buttons that have
+  added event listeners which display six pokemon. The first has them in a
+  slideshow and the other just in a flexbox. I have a 9 radio elements in order
+  to facilitate regional specification.
+-->
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <script src="index.js"></script>
+  <title>Pokedex</title>
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1>Introduction to Various Tubers</h1>
+      <p>Quick Introduction to various kinds of tubers that you may encounter
+        if you are interested in gardening or the Internet.
+      </p>
+      <p>Click on the generated images for information.</p>
+      <button id="biblio">Show Sources</button>
+    </header>
+    <section id="info">
+      <h2>Information Display</h2>
+      <p>
+        <label><input type="radio" name="range" value="tuber" checked> Tubers</label>
+        <label><input type="radio" name="range" value="vtube"> VTubers</label>
+      </p>
+      <button id="clickity">Generate Images</button>
+    </section>
+    <section id="table">
+    </section>
+    <section id="tubeinformation" class="hidden">
+      <h2></h2>
+      <div id="scientificname"></div>
+      <section>
+        <img src='img/tuber.jpg' alt='Tuber' id="img">
+        <div id="description"></div>
+      </section>
+    </section>
+    <section id="vtubeinformation" class="hidden">
+      <h2></h2>
+      <hr>
+      <section>
+        <img src='img/tuber.jpg' alt='Tuber' id="img2">
+        <article id="infos">
+          <div id="birthday"></div>
+          <div id="debut"></div>
+          <div id="fanname"></div>
+          <hr>
+          <div id="description2"></div>
+        </article>
+      </section>
+    </section>
+    <button id="return" class="hidden">Return to Table Display</button>
+    <footer id="sources" class="hidden">
+      <p>Sources</p>
+      <ul>
+        <li>Respective Wikipedia pages for tubers and their photos
+          <a href="https://en.wikipedia.org/wiki/Potato">Potato</a>,
+          <a href="https://en.wikipedia.org/wiki/Cassava">Cassava</a>,
+          <a href="https://en.wikipedia.org/wiki/Yam_(vegetable)">Yam</a>,
+          <a href="https://en.wikipedia.org/wiki/Sweet_potato">Sweet Potato</a>,
+          <a href="https://en.wikipedia.org/wiki/Tuber">Tuber</a>
+        </li>
+        <li>Respective links for vtubers
+          <a href="https://hololive.hololivepro.com/en/talents?gp=english">
+            All Information pulled from here
+          </a>
+          <a href="https://hololive.wiki/wiki/Category:Hololive_EN_VTubers">
+            Images taken from here
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </main>
+</body>
+
+</html>
